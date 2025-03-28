@@ -208,70 +208,7 @@ header {
 }
 
 /*About page styling---------------------------------*/
-.about-me {
-    padding: 50px;
-}
-.about-intro, .about-education, .about-skills, .about-goal, .about-interests, .blog-blog article {
-    padding: 70px;
-    background-color: rgb(244, 236, 247, 0.8);
-    border-radius: 3%;
-    margin: 10px;
-}
-.about-h1 {
-    padding: 20px;
-    color: #3a063d;
-    font-size: xx-large;
-}
-.about-intro {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-.about-image {
-    flex: 1;
-    margin-right: 20px;
-}
-.about-image img {
-    border-radius: 2%;
-    width: 100%; /* Adjusts image to be responsive within its flex container */
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-    animation: imgBounce 2s infinite;
-    border: solid 1px rgb(165, 105, 189);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-.about-description {
-    flex: 2;
-    padding: 20px;
-}
-.edu-entry {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    padding: 30px;
-}
-.edu-yr {
-    flex: 1;
-    text-align: center;
-    font-weight: bold;
-    padding-right: 20px;
-}
-.edu-description {
-    flex: 2;
-    text-align: left;
-}
-.about-pic1 img {
-    float: right;
-    border-radius: 2%;
-    width: 100%; /* Adjusts image to be responsive within its flex container */
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-    animation: imgBounce 2s infinite;
-    border: solid 1px rgb(165, 105, 189);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+
 
 /*Blog page styling------------*/
 .blog-blog {

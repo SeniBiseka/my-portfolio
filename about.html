@@ -10,6 +10,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+/* About Me Section Layout */
+.about-me {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+/* About Intro Section */
+.about-intro {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 2rem;
+}
+.about-image, .about-description {
+    width: 50%;
+    padding: 1rem;
+}
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Education Section Responsive */
+.about-education {
+    padding: 100px 0px;
+    margin-bottom: 2rem;
+}
+
+.edu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.edu-entry {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.edu-yr {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 50px 0px;
+}
+
+.skills-content ul {
+    list-style-type: disc;
+    max-width: 600px;
+}
+
+.skills-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Goal and Interests Section */
+.about-goal-interests {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.goal-section, .interests-section {
+    width: 50%;
+    padding: 1rem;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-intro, 
+    .about-goal-interests,
+    .edu-container {
+        flex-direction: column;
+    }
+
+    .about-image, 
+    .about-description,
+    .goal-section, 
+    .interests-section, 
+    .goal-image,
+    .edu-entry {
+        width: 100%;
+    }
+} 
+    </style>
 </head>
 <body>
     <nav>
@@ -36,8 +131,11 @@
     <main>
         <section class="about-me">
             <article class="about-intro">
+                <div class="about-image">
+                    <img src="Images/seni4.jpg" alt="seni-biseka">
+                </div>
                 <div class="about-description">
-                    <h2>Hello,</h2>
+                    <h2>Hello,</h2> <br>
                     <p>I'm Seni Biseka, and I am currently pursuing a 
                         degree in computer science. With a keen interest 
                         in problem-solving and programming, I enjoy developing 
@@ -49,62 +147,58 @@
                          further and make a positive impact in the field of 
                          computer science.</p>
                 </div>
-                <div class="about-image">
-                    <img src="Images/seni1.jpg" alt="seni-biseka">
-                </div>
             </article>
 
             <article class="about-education">
                 <h1 class="about-h1">EDUCATION</h1>
-                <div class="edu-1 edu-entry">
-                    <div class="edu-yr">2008 - 2021</div>
-                    <div class="edu-description">
-                        <strong>SANGHAMITTA BALIKA VIDYALAYA - GALLE</strong><br>
-                        I completed my Primary and secondary education at Sanghamitta Balika Vidyalaya, Galle.
+                <div class="edu-container">
+                    <div class="edu-1 edu-entry">
+                        <div class="edu-yr">2008 - 2021</div>
+                        <div class="edu-description">
+                            <strong>SANGHAMITTA BALIKA VIDYALAYA - GALLE</strong><br>
+                            I completed my Primary and secondary education at Sanghamitta Balika Vidyalaya, Galle.
+                        </div>
                     </div>
-                </div>
-                <div class="edu-2 edu-entry">
-                    <div class="edu-yr">2023 - 2027</div>
-                    <div class="edu-description">
-                        <strong>INFORMATICS INSTITUTE OF TECHNOLOGY (IIT)</strong><br>
-                        I am currently undertaking a BSc Computer Science degree awarded by the University of Westminster, UK.
+                    <div class="edu-2 edu-entry">
+                        <div class="edu-yr">2023 - 2027</div>
+                        <div class="edu-description">
+                            <strong>INFORMATICS INSTITUTE OF TECHNOLOGY (IIT)</strong><br>
+                            I am currently undertaking a BSc Computer Science degree awarded by the University of Westminster, UK.
+                        </div>
                     </div>
                 </div>
             </article>
 
             <article class="about-skills">
                 <h1 class="about-h1">SKILLS</h1>
-                <ul>
-                    <li>I am familiar with Python and Java programming languages.</li>
-                    <li>I am familiar with HTML, CSS, JavaScript and Bootstrap.</li>
-                    <li>I am skilled in using IDEs like Visual Studio Code and IntelliJ IDEA for Software development.</li>
-                    <li>Good at analyzing problems and developing effective solutions.</li>
-                    <li>Able to work in a team.</li>
-                    <li>Flexible and willing to learn new technologies and adapt to changing environments.</li>
-                </ul>
-                <aside class="about-pic1">
-                    <img src="Images/seni4.jpg" alt="seni_biseka">
-                </aside>
+                <div class="skills-content">
+                    <ul>
+                        <li>I am familiar with Python and Java programming languages.</li>
+                        <li>I am familiar with HTML, CSS, JavaScript and Bootstrap.</li>
+                        <li>I am skilled in using IDEs like Visual Studio Code and IntelliJ IDEA for Software development.</li>
+                        <li>Good at analyzing problems and developing effective solutions.</li>
+                        <li>Able to work in a team.</li>
+                        <li>Flexible and willing to learn new technologies and adapt to changing environments.</li>
+                    </ul>
+                </div>
             </article>
 
-            <article class="about-goal">
-                <h1 class="about-h1">GOAL</h1>
-                <p>I aspire to contribute to tech solutions that address real-world problems. In the future, 
-                    I plan to work in a collaborative environment where I can continue learning and apply my skills to 
-                    develop sustainable, innovative software.</p>
+            <article class="about-goal-interests">
+                <div class="goal-section">
+                    <h1 class="about-h1">GOAL</h1>
+                    <p>I aspire to contribute to tech solutions that address real-world problems. In the future, 
+                        I plan to work in a collaborative environment where I can continue learning and apply my skills to 
+                        develop sustainable, innovative software.</p>
+                </div>
+                <div class="interests-section">
+                    <h1 class="about-h1">PERSONAL INTERESTS</h1>
+                    <ul>
+                        <li>I like watching movies.</li>
+                        <li>I can sing and love music.</li>
+                        <li>I'm eager to learn about new technologies.</li>
+                    </ul>
+                </div>
             </article>
-
-            <article class="about-interests">
-                <h1 class="about-h1">PERSONAL INTERESTS</h1>
-                <ul>
-                    <li>I like watching movies.</li>
-                    <li>I can sing and love music.</li>
-                    <li>I'm eager to learn about new technologies.</li>
-                </ul>
-            </article>
-            
-            
-            
         </section>
     </main>
 
